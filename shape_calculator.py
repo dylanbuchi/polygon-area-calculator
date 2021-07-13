@@ -30,7 +30,7 @@ class Rectangle:
             return self.IS_TOO_BIG_STRING
         return self._create_picture()
 
-    def get_amount_inside(self, shape: Rectangle):
+    def get_amount_inside(self, shape: Rectangle) -> int:
         return self.get_area() // shape.get_area()
 
     def _is_too_big(self) -> bool:
